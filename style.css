@@ -1,0 +1,416 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: arial,sans-serif;
+}
+
+body{
+    background-color: #E8EFF0;
+    width: 1050px;
+    margin: 50px auto;
+}
+
+.header{
+    width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.web_head img{
+    width: 285px;
+    height: 95px;
+}
+
+.menu{
+    margin-block: 20px;
+}
+
+.menu span{
+    padding-inline: 15px;
+    border-right: 1px dashed black;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    transition: 0.5s;
+}
+
+
+.menu i{
+    padding-inline: 15px;
+}
+
+
+.mailbox{
+    width: 48%;
+    height: 150px;
+    border: 1px solid black;
+}
+
+.mailbox span{
+    height: 10px;
+    background-image: url("line.png");
+    background-repeat: repeat-x;
+    display: block;
+}
+
+.mailbox h3{
+    margin-block: 15px;
+    margin-left: 20px;
+}
+
+.mailbox input{
+    margin-block: 15px;
+    margin-left: 20px;
+    padding-inline: 10px;
+    height: 40px;
+    width: 300px;
+    font-size: 15px;
+}
+
+.mailbox button{
+    height: 40px;
+    padding-inline: 20px;
+    font-weight: bold;
+    margin-left: 20px;
+    border-radius: 7px;
+    background-image: linear-gradient( to bottom, rgba(147, 180, 199, 0.863) 50%, rgb(123, 153, 170) 50%);
+}
+
+.wrapper {
+    width: 1100px;
+    margin-block: 50px;
+    border: 1px solid rgb(189, 187, 187);
+    padding-inline: 40px;
+    padding-block: 40px;
+    background-color:white;
+}
+
+.deal_show{
+    display: flex;
+    border-bottom: 3px dashed rgb(189, 187, 187);
+    padding-bottom: 40px
+}
+
+.deal_description .deal_img{
+    width: 100%;
+    height: 330px;
+    background-color: rgb(254,83,53);
+    outline: 1px solid gray;
+    outline-offset: 5px;
+    margin-block: 40px;
+}
+
+
+.deal_description p{
+    color: rgb(189, 187, 187)
+}
+
+.deal_infor{
+    width: 700px;
+   
+    margin-left: 50px;
+    display: flex;
+    flex-direction:column;
+}
+
+.brands{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-block: 30px;
+    border-bottom: 3px dashed rgb(189, 187, 187);
+}
+
+.brands img{
+    transition: 0.5s;
+}
+
+.brands img:hover{
+    transform: scale(1.4);
+}
+
+.deal_list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.deal_item {
+    width: 33%;
+    border-bottom: 3px dashed rgb(189, 187, 187);
+    border-right: 3px dashed rgb(189, 187, 187);
+    padding-inline: 15px;
+}
+
+.deal_item h3{
+    margin-block: 15px;
+    font-size: 15px;
+}
+
+.deal_body{
+    border: 1px solid rgb(189, 187, 187);
+    padding: 5px;
+}
+
+.deal_body .deal_img{
+    width: 100%;
+    height: 150px;
+    background-color: rgb(254,83,53);
+}
+
+.deal_info{
+    margin-block: 10px;
+    display: flex;
+}
+
+.deal_value, .deal_discount, .deal_save{
+    padding-inline: 15px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.deal_value, .deal_discount{
+    border-right: 3px dashed rgb(189, 187, 187);
+}
+
+
+.deal_value p, .deal_discount p, .deal_save p{
+    font-weight: bold;
+}
+
+
+.deal_value h4, .deal_discount h4, .deal_save h4{
+    color:gray;
+}
+
+
+.deal_footer{
+    margin-block: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.deal_footer p{
+    color:gray;
+    font-size: 10px;
+}
+
+.deal_footer .show_deal{
+    padding-inline: 10px;
+    padding-block: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    background-image: linear-gradient(to bottom, #D8ECA4, #a5cf39);
+    color:rgba(56, 54, 54, 0.877);
+}
+
+
+.remove_border_right{
+    border-right: none;
+}
+
+
+.other {
+    display: flex;
+    justify-content: center;
+}
+
+
+.about, .twitter, .other_pages {
+    width: 33%;
+    border-right: 3px dashed rgb(189, 187, 187);
+    padding-inline: 15px;
+    padding-block: 20px;
+}
+
+.about h4, .twitter h4, .other_pages h4{
+   font-size: 20px;
+}
+
+
+.about p{
+    margin-top: 15px;
+    font-size: 15px;
+    color: rgb(189, 187, 187)
+}
+
+.twitter .buzz{
+    padding-bottom: 30px;
+    font-size: 14px;
+    border-bottom: 3px dashed rgb(189, 187, 187);
+}
+
+
+.twitter .buzz p{
+    margin-block: 15px;
+    color: rgb(189, 187, 187)
+}
+
+.twitter .buzz a{
+    color: #76922e;
+    text-decoration: none;
+}
+
+
+.twitter .buzz a:hover{
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.time{
+    padding-block: 5px;
+    padding-inline: 10px;
+    background-color: rgb(206, 205, 205);
+    color: gray;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+
+.other_pages a{
+    padding-block: 15px;
+    color: #76922e;
+    border-bottom: 3px dashed rgb(189, 187, 187);
+    font-size: 14px;
+    text-decoration: none;
+    display: flex;
+    flex-flow: column;
+}
+
+
+
+.other_pages a:hover{
+   font-weight: bold;
+}
+
+
+.footer{
+    text-align: center;
+    font-size: 15px;
+    
+}
+
+.footer p{
+    margin-block: 10px;
+    color: rgb(189, 187, 187)
+}
+
+.footer span{
+    color: black;
+}
+
+
+.deal_details{
+    text-align: center;
+    background-image: url("background.jpg");
+    background-size: 200px;
+    border: 1px solid rgb(189, 187, 187);
+}
+
+.buy_button{
+    padding-block: 30px;
+    border-radius: 10px;
+    margin-block: 20px;
+    font-size:30px;
+    font-weight: bold;
+    background-image: linear-gradient(to bottom, #D8ECA4, #a5cf39);
+    color: rgb(83, 82, 82);
+}
+
+.deal_details h3{
+    color: rgb(189, 187, 187);
+}
+
+
+.time_effect, .discount, .value, .save{
+    padding-block: 15px;
+}
+
+
+.time_effect{
+    border-block: 1px solid rgb(189, 187, 187);
+    margin-block: 5px;
+    font-weight: bold;
+    font-size: 19px;
+}
+
+
+.discount{
+    border-top: 1px solid rgb(189, 187, 187);
+    border-bottom: 3px dashed rgb(189, 187, 187);
+}
+
+
+
+.show_value, .show_save {
+    font-weight: bold;
+    font-size: 17px;
+}
+
+
+.show_discount{
+    font-weight: bold;
+    font-size: 80px;
+}
+
+.value_save{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 3px dashed rgb(189, 187, 187);
+}
+
+
+.interactive{
+    padding-block: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.twitter_box button{
+    color: rgb(23,156,240);
+    padding-inline: 5px;
+    border: 1px solid rgb(23,156,240);
+    border-radius: 3px;
+    background-color: white;
+}
+
+
+.fb_box button{
+    color: rgb(42,79,144);
+    padding-inline: 5px;
+    border: 1px solid rgb(42,79,144);
+    border-radius: 3px;
+    background-color: white;
+}
+
+.tweet{
+    padding: 5px;
+    background-color:white;
+    color: rgb(23,156,240);
+    border: 1px solid rgb(23,156,240);
+}
+
+.like{
+    padding: 5px;
+    background-color:white;
+    color: rgb(42,79,144);
+    border: 1px solid rgb(42,79,144);
+}
+
+
+.sign{
+    width:70px;
+    height:70px;
+    border: 3px solid #e0e6e6;
+    position: absolute;
+    outline: 3px solid #e0e6e6;
+    outline-offset: 10px;
+    border-radius: 50%;
+    right: 150px;
+    transform: translateY(-20px);
+}
